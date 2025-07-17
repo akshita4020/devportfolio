@@ -1,69 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Akshita | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Akshita | Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <img src="images/Screenshot 2025-07-17 185229.png" alt="Akshita headshot" class="profile-pic">
-    <h1>Akshita</h1>
-    <p>Final Year B.Tech Student | IIT Jammu | Passionate about Data & Simulation</p>
-    <a href="https://www.linkedin.com/in/akshita-s-29b3b625a/" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/akshita4020" target="_blank">GitHub</a> |
-    <a href="Data_Akshita_IIT Jammu.pdf" target="_blank">Resume</a>
-  </header>
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
 
-  <main>
-    <section id="projects">
-      <h2>Projects</h2>
+    <div id="lead">
+        <div id="lead-content">
+            <img src="images/Screenshot 2025-07-17 185229.png" alt="Akshita Profile" style="width:140px;height:140px;border-radius:50%;margin-bottom:15px;">
+            <h1>Akshita</h1>
+            <h2>Final-year B.Tech Student | Data & Product Enthusiast</h2>
+            <a href="Data_Akshita_IIT%20Jammu.pdf" class="btn-rounded-white" target="_blank">Download Resume</a>
+        </div>
+        <div id="lead-overlay"></div>
+        <div id="lead-down">
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+        </div>
+    </div>
 
-      <!-- Bank Loan Dashboard Project -->
-      <div class="project">
-        <h3>Bank Loan Analysis Dashboard (Tableau)</h3>
-        <img src="images/1749374166213.jpg" alt="Loan Dashboard Overview">
-        <img src="images/1749374166783.jpg" alt="Loan Dashboard Table View">
-        <p>
-          Developed an interactive Tableau dashboard visualizing key metrics for loan disbursement, interest rates,
-          and borrower patterns. Incorporated filter-based analysis and map-based visual insights.
-        </p>
-      </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                    <img src="images/Screenshot 2025-07-17 185229.png" alt="Akshita" style="width:100%;max-width:280px;border-radius:10px;margin-top:15px;">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I’m Akshita, a final-year B.Tech student at IIT Jammu with a passion for data-driven products. I enjoy solving real-world problems through analytics and visualization. Skilled in Python, SQL, Tableau, and machine learning — I’ve built dashboards, simulations, and recommendation engines. Curious, fast-learning, and excited to build user-focused solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <!-- Book Recommender System -->
-      <div class="project">
-        <h3>Book Recommender System (ML)</h3>
-        <img src="images/Screenshot 2025-07-17 190321.png" alt="Book Recommender UI 1">
-        <img src="images/Screenshot 2025-07-17 190306.png" alt="Book Recommender UI 2">
-        <p>
-          Built a content-based book recommendation engine using cosine similarity on user ratings and text features. Implemented a clean UI in Streamlit for live interaction.
-        </p>
-      </div>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="May 2025 – Present">
+                <h3>SDM Fuels</h3>
+                <h4>Data Analyst Intern</h4>
+                <p>
+                    Developed Tableau dashboards to monitor sales and inventory for 20+ outlets. Built Python-based forecasting models that reduced fuel stockouts by 30%. Designed ETL pipelines integrating POS and IoT tank sensor data for anomaly detection.
+                </p>
+            </div>
+            <div data-date="May 2024 – July 2024">
+                <h3>IIT Roorkee</h3>
+                <h4>SPARK Research Intern</h4>
+                <p>
+                    Simulated anti-VEGF drug transport for Diabetic Retinopathy using Python and ODE-based models. Compared topical vs intravitreal drug delivery for pharma insights.
+                </p>
+            </div>
+        </div>
+    </div>
 
-      <!-- Coffee Sales Excel Dashboard -->
-      <div class="project">
-        <h3>Coffee Sales Dashboard (Excel)</h3>
-        <img src="images/Screenshot 2025-07-17 185954.png" alt="Coffee Sales Dashboard">
-        <p>
-          Created an Excel dashboard to analyze coffee sales by roast type, region, and customer. Integrated slicers and data bars for dynamic visual filtering.
-        </p>
-      </div>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Indian Institute of Technology (IIT), Jammu</h3>
+            <span class="education-date">2021 - 2025</span>
+            <h4>B.Tech in Materials Science & Engineering (Minor in CSE)</h4>
+            <p>CGPA: 8.06</p>
+        </div>
+        <div class="education-block">
+            <h3>K.L. International School, Meerut</h3>
+            <span class="education-date">2019 - 2021</span>
+            <h4>Senior Secondary (Class 12)</h4>
+            <p>Percentage: 95.6%</p>
+        </div>
+    </div>
 
-      <!-- Drug Release Simulation (Placeholder) -->
-      <div class="project">
-        <h3>Drug Release Modeling (Simulation)</h3>
-        <img src="images/project.jpg" alt="Drug Release Modeling">
-        <p>
-          Modeled anti-VEGF drug release via topical and intravitreal routes using MATLAB. Estimated half-life from experimental data and integrated into compartmental kinetics.
-        </p>
-      </div>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/1749374166213.jpg" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Bank Loan Analysis Dashboard</h3>
+                        <p>Analyzed 10K+ loan records to identify default risks. Created Tableau dashboard tracking loans, repayments & defaults. Improved loan classification by 30%.</p>
+                        <p><strong>Tools:</strong> Tableau, Excel, SQL (simulated)</p>
+                        <a href="https://github.com/akshita4020" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
 
-    </section>
-  </main>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/1749374166783.jpg" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Bank Loan Analysis Dashboard (2)</h3>
+                        <p>Visualized payment patterns and default probability using custom Tableau charts and KPI trackers.</p>
+                        <p><strong>Tools:</strong> Tableau, Excel</p>
+                        <a href="https://github.com/akshita4020" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
 
-  <footer>
-    <p>© 2025 Akshita | Built with ❤️</p>
-  </footer>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2025-07-17 190306.png" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Book Recommendation System</h3>
+                        <p>Designed a personalized book recommender using Goodreads ratings. Implemented collaborative filtering using k-NN and cosine similarity, optimized with sparse matrices.</p>
+                        <p><strong>Tools:</strong> Python, Pandas, Scikit-Learn, SciPy</p>
+                        <a href="https://github.com/akshita4020" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2025-07-17 190321.png" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Book Recommendation System (2)</h3>
+                        <p>Added genre-based similarity and reader behavior segmentation. Improved accuracy for cold-start users.</p>
+                        <p><strong>Tools:</strong> Python, SciPy</p>
+                        <a href="https://github.com/akshita4020" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2025-07-17 191427.png" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Coffee Shop Sales Analysis</h3>
+                        <p>Cleaned and analyzed 3 months of sales data. Created Excel dashboard with slicers and KPIs. Found 25% higher weekend sales for combo products.</p>
+                        <p><strong>Tools:</strong> MS Excel, Pivot Tables, XLOOKUP</p>
+                        <a href="https://github.com/akshita4020" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>Tableau</li>
+            <li>Power BI</li>
+            <li>Excel</li>
+            <li>Scikit-learn</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>SciPy</li>
+            <li>TensorFlow</li>
+            <li>Keras</li>
+            <li>OpenCV</li>
+            <li>RoboFlow</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/f/mqkrplrd">
+                <input type="hidden" name="_subject" value="Contact request from portfolio site" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>Copyright &copy; <span id="current-year">2025</span> Akshita</p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li><a href="https://github.com/akshita4020" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://linkedin.com/in/akshita-s-29b3b625a" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:2021umt0166@iitjammu.ac.in"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
